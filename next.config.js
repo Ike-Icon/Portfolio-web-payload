@@ -22,6 +22,10 @@ const nextConfig = {
   },
   reactStrictMode: true,
   redirects,
+  experimental: {
+    appDir: true,
+  },
+  transpilePackages: ['@payloadcms/richtext-lexical'],
 }
 
 export default withPayload(nextConfig, { devBundleServerPackages: false })
